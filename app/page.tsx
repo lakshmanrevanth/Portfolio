@@ -1,6 +1,34 @@
 import Image from 'next/image'
 import Link from 'next/link'
+// function aboutMeContactFun() {
+// 	return (
+// 		<div className="card">
+// 			<div className="background"></div>
+// 			<div className="logo">Socials</div>
 
+// 			<a href="#">
+// 				<div className="box box1">
+// 					<span className="icon"></span>
+// 				</div>
+// 			</a>
+
+// 			<a href="##">
+// 				<div className="box box2">
+// 					{' '}
+// 					<span className="icon"></span>
+// 				</div>
+// 			</a>
+
+// 			<a href="###">
+// 				<div className="box box3">
+// 					<span className="icon"></span>
+// 				</div>
+// 			</a>
+
+// 			<div className="box box4"></div>
+// 		</div>
+// 	)
+// }
 function Footer() {
 	return (
 		<footer className=" text-white py-4 mt-8 w-full">
@@ -136,29 +164,61 @@ export default function Home() {
 						Let's transform your ideas into reality.
 					</p>
 				</div>
+			</div>
 
-				<div className="services-grid">
-					<div className="service">
-						<h3>Web apps</h3>
-						<p>
-							I develop web applications in Python and JavaScript
-							programming languages.
-						</p>
+			<div className="about-me-section h-screen flex flex-col w-full">
+				<div className="about-me-nav-section flex justify-start items-center p-8 h-15">
+					<h1 className="text-2xl md:text-4xl font-bold text-white">
+						About Me
+					</h1>
+				</div>
+				<div className="about-me-body flex flex-col justify-start items-center p-8 w-full ">
+					<div className="about-me-body-title w-full">
+						<div className="about-me-body-name ">
+							<h1 className="text-2xl md:text-4xl font-bold text-white">
+								R LAKSHMAN REVANTH
+							</h1>
+						</div>
+						<div className="about-me-body-name-subtitle">
+							<h2 className="text-1xl md:text-2xl font-bold text-white">
+								App Developer
+							</h2>
+						</div>
+						<div className="red-line"></div>
 					</div>
-					<div className="service">
-						<h3>E-Commerce</h3>
-						<p>
-							I build e-commerce sites and provide technical
-							solutions on Shopify and Wix as a platform partner.
-						</p>
+					<div className="about-me-body-center flex flex-row justify-start w-full">
+						<div className="about-me-body-left">
+							<div className="about-me-body-left-education">
+								<div className="card">
+									<h2>EDUCATION</h2>
+									<div className="education-item">
+										<div className="year">2020 - 2024</div>
+										<div className="details">
+											<div className="institution">
+												Sona College Of Technology
+											</div>
+											<div>
+												B.TECH Fashion Technology ( CGPA
+												8.3/10 )
+											</div>
+										</div>
+									</div>
+									<div className="education-item">
+										<div className="year">2023</div>
+										<div className="details">
+											<div className="institution">
+												Image Creative Education
+											</div>
+											<div>UI/UX Designing</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="about-me-body-right"></div>
 					</div>
-					<div className="service">
-						<h3>No-code</h3>
-						<p>
-							I provide technical solutions on no-code platforms
-							like WebFlow, Wix, Squarespace.
-						</p>
-					</div>
+
+					<div className="about-me-body-social-card "></div>
 				</div>
 			</div>
 
