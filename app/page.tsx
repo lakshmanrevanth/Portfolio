@@ -1,34 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-// function aboutMeContactFun() {
-// 	return (
-// 		<div className="card">
-// 			<div className="background"></div>
-// 			<div className="logo">Socials</div>
 
-// 			<a href="#">
-// 				<div className="box box1">
-// 					<span className="icon"></span>
-// 				</div>
-// 			</a>
-
-// 			<a href="##">
-// 				<div className="box box2">
-// 					{' '}
-// 					<span className="icon"></span>
-// 				</div>
-// 			</a>
-
-// 			<a href="###">
-// 				<div className="box box3">
-// 					<span className="icon"></span>
-// 				</div>
-// 			</a>
-
-// 			<div className="box box4"></div>
-// 		</div>
-// 	)
-// }
 function Footer() {
 	return (
 		<footer className=" text-white py-4 mt-8 w-full">
@@ -165,61 +137,177 @@ export default function Home() {
 					</p>
 				</div>
 			</div>
-
-			<div className="about-me-section h-screen flex flex-col w-full">
-				<div className="about-me-nav-section flex justify-start items-center p-8 h-15">
-					<h1 className="text-2xl md:text-4xl font-bold text-white">
-						About Me
+			<div className="services-section flex flex-col justify-between items-center w-full pt-4 md:pt-6 lg:pt-8">
+				<div className="services-section-title flex flex-col">
+					<h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+						My Services
 					</h1>
-				</div>
-				<div className="about-me-body flex flex-col justify-start items-center p-8 w-full ">
-					<div className="about-me-body-title w-full">
-						<div className="about-me-body-name ">
-							<h1 className="text-2xl md:text-4xl font-bold text-white">
-								R LAKSHMAN REVANTH
-							</h1>
-						</div>
-						<div className="about-me-body-name-subtitle">
-							<h2 className="text-1xl md:text-2xl font-bold text-white">
-								App Developer
-							</h2>
-						</div>
-						<div className="red-line"></div>
+					<div className="services-section-sub-title">
+						Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Dicta quisquam aperiam vero voluptatum suscipit
+						vel, sint
 					</div>
-					<div className="about-me-body-center flex flex-row justify-start w-full">
-						<div className="about-me-body-left">
-							<div className="about-me-body-left-education">
-								<div className="card">
-									<h2>EDUCATION</h2>
-									<div className="education-item">
-										<div className="year">2020 - 2024</div>
-										<div className="details">
-											<div className="institution">
-												Sona College Of Technology
-											</div>
-											<div>
-												B.TECH Fashion Technology ( CGPA
-												8.3/10 )
-											</div>
-										</div>
-									</div>
-									<div className="education-item">
-										<div className="year">2023</div>
-										<div className="details">
-											<div className="institution">
-												Image Creative Education
-											</div>
-											<div>UI/UX Designing</div>
-										</div>
-									</div>
+				</div>
+
+				<div className="services-section-cards flex justify-center items-center ">
+					<div className="grid">
+						<div className="card">
+							<h4>Products</h4>
+							<p>
+								Standard chunk of Lorem Ipsum used since the
+								1500s is showed below for those interested.
+							</p>
+							<div className="shine"></div>
+							<div className="background">
+								<div className="tiles">
+									<div className="tile tile-1"></div>
+									<div className="tile tile-2"></div>
+									<div className="tile tile-3"></div>
+									<div className="tile tile-4"></div>
+
+									<div className="tile tile-5"></div>
+									<div className="tile tile-6"></div>
+									<div className="tile tile-7"></div>
+									<div className="tile tile-8"></div>
+
+									<div className="tile tile-9"></div>
+									<div className="tile tile-10"></div>
 								</div>
+
+								<div className="line line-1"></div>
+								<div className="line line-2"></div>
+								<div className="line line-3"></div>
 							</div>
 						</div>
-						<div className="about-me-body-right"></div>
-					</div>
+						<div className="card">
+							<h4>Products</h4>
+							<p>
+								Standard chunk of Lorem Ipsum used since the
+								1500s is showed below for those interested.
+							</p>
+							<div className="shine"></div>
+							<div className="background">
+								<div className="tiles">
+									<div className="tile tile-1"></div>
+									<div className="tile tile-2"></div>
+									<div className="tile tile-3"></div>
+									<div className="tile tile-4"></div>
 
-					<div className="about-me-body-social-card "></div>
+									<div className="tile tile-5"></div>
+									<div className="tile tile-6"></div>
+									<div className="tile tile-7"></div>
+									<div className="tile tile-8"></div>
+
+									<div className="tile tile-9"></div>
+									<div className="tile tile-10"></div>
+								</div>
+
+								<div className="line line-1"></div>
+								<div className="line line-2"></div>
+								<div className="line line-3"></div>
+							</div>
+						</div>
+						<div className="card">
+							{' '}
+							<h4>Categories</h4>
+							<p>
+								Standard chunk of Lorem Ipsum used since the
+								1500s is showed below for those interested.
+							</p>
+							<div className="shine"></div>
+							<div className="background">
+								<div className="tiles">
+									<div className="tile tile-1"></div>
+									<div className="tile tile-2"></div>
+									<div className="tile tile-3"></div>
+									<div className="tile tile-4"></div>
+
+									<div className="tile tile-5"></div>
+									<div className="tile tile-6"></div>
+									<div className="tile tile-7"></div>
+									<div className="tile tile-8"></div>
+
+									<div className="tile tile-9"></div>
+									<div className="tile tile-10"></div>
+								</div>
+
+								<div className="line line-1"></div>
+								<div className="line line-2"></div>
+								<div className="line line-3"></div>
+							</div>
+						</div>
+					</div>
 				</div>
+			</div>
+			<div className="contact-section flex flex-col justify-between items-center w-full min-h-screen pt-4 md:pt-6 lg:pt-8">
+				<div className="contact-section-title flex flex-col items-start">
+					<h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+						Contact Me
+					</h1>
+					<div className="services-section-sub-title">
+						Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Dicta quisquam aperiam vero voluptatum suscipit
+						vel, sint
+					</div>
+				</div>
+				<div className="contact-section-body">
+					<div className="wrapper">
+						<form className="form__contact" action="">
+							<fieldset>
+								<p>Hey, Stranger!</p>
+								<p>
+									My name is{' '}
+									<span
+										className="form__field field--name"
+										data-placeholder="your name"
+										tabIndex={1}
+										contentEditable
+									></span>{' '}
+									and I'm writing to you since I'm interested
+									in{' '}
+									<span
+										className="form__field field--message"
+										data-placeholder="your message"
+										tabIndex={2}
+										contentEditable
+									></span>
+									.
+								</p>
+								<p>
+									This is my{' '}
+									<span
+										className="form__field field--email"
+										data-placeholder="email address"
+										tabIndex={3}
+										contentEditable
+									></span>
+									.
+								</p>
+								<p>Hope to get in touch soon. Cheers!</p>
+								<button
+									type="submit"
+									className="button button--xlarge"
+									tabIndex={4}
+								>
+									Send message &#187;
+								</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div className="skills-section-title flex flex-col items-start pt-4 md:pt-6 lg:pt-8">
+				<div className="skills-section-title">
+					<h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+						Skills
+					</h1>
+					<div className="skills-section-sub-title">
+						Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Dicta quisquam aperiam vero voluptatum suscipit
+						vel, sint
+					</div>
+				</div>
+				<div className="skills-section-body"></div>
 			</div>
 
 			<Footer />

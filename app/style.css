@@ -1,0 +1,132 @@
+::-moz-selection {
+	color: #fff;
+	background: #9fbe5a;
+}
+::selection {
+	color: #fff;
+	background: #9fbe5a;
+}
+
+.form__contact {
+	max-width: 900px;
+	margin: 0 auto;
+	border-left: 30px solid black;
+
+	transform: translateY(100%);
+	-webkit-animation: init 1s ease-in-out forwards;
+	animation: init 1s ease-in-out forwards;
+}
+.form__contact fieldset {
+	position: relative;
+	margin: 0;
+	padding: 30px 30px 40px 80px;
+	border: none;
+	border-radius: 0 20px 20px 0;
+	font: 24px 'Shadows Into Light', cursive;
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.1) 1px,
+			rgba(0, 0, 0, 0) 0
+		)
+		0 20px / 100% 40px;
+}
+.form__contact fieldset:after {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	content: '';
+	height: 100%;
+	width: 1px;
+	border-left: double #e08183;
+}
+.form__contact p {
+	margin: 0 0 40px 0;
+	line-height: 40px;
+	color: #333;
+}
+.form__contact span {
+	position: relative;
+	line-height: 40px;
+}
+.form__contact button {
+	margin-top: 40px;
+	float: right;
+	border: none;
+	font-family: 'Shadows Into Light', cursive;
+	color: #e08183;
+	background: transparent;
+	cursor: pointer;
+	transition: transform 0.25s ease;
+}
+.form__contact button:hover {
+	transform: translateX(10px);
+}
+
+.form__field {
+	display: inline;
+	color: #7db665;
+	outline: none;
+}
+.form__field:empty {
+	display: inline-block;
+	color: #ddd;
+}
+.form__field:empty:before,
+.form__field:empty:focus:before {
+	content: attr(data-placeholder);
+}
+
+svg {
+	display: none;
+}
+
+@-webkit-keyframes init {
+	75% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes init {
+	75% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+@-webkit-keyframes do-blur {
+	0% {
+		filter: url(#blur4);
+	}
+	25% {
+		filter: url(#blur3);
+	}
+	50% {
+		filter: url(#blur2);
+	}
+	75% {
+		filter: url(#blur1);
+	}
+	100% {
+		filter: url(#blur0);
+	}
+}
+@keyframes do-blur {
+	0% {
+		filter: url(#blur4);
+	}
+	25% {
+		filter: url(#blur3);
+	}
+	50% {
+		filter: url(#blur2);
+	}
+	75% {
+		filter: url(#blur1);
+	}
+	100% {
+		filter: url(#blur0);
+	}
+}

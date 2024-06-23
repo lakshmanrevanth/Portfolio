@@ -17,6 +17,9 @@ const config: Config = {
 				foreground: 'rgb(var(--foreground-rgb))',
 				backgroundStart: 'rgb(var(--background-start-rgb))',
 				backgroundEnd: 'rgb(var(--background-end-rgb))',
+				'red-600': '#D3302C',
+				'yellow-500': '#F3A22D',
+				'gray-700': '#495460',
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'], // Add a modern sans-serif font
