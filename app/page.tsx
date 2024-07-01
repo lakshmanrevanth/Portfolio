@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import CubeComponent from './components/CubeComponent'
 
 function Footer() {
 	return (
@@ -53,7 +54,7 @@ export default function Home() {
 							href="/"
 							className="text-1xl font-bold hover:text-blue-500 transition-colors duration-300"
 						>
-							Rev
+							<div className="shine">Rev</div>
 						</Link>
 					</div>
 					<ul className="flex justify-center space-x-4 lg:space-x-8 flex-1">
@@ -109,21 +110,25 @@ export default function Home() {
 					</div>
 				</nav>
 			</header>
-			<div className="text-center space-y-4 h-screen flex flex-col justify-center items-center">
-				<h1 className="text-4xl md:text-6xl font-bold">
-					HEY, I&apos;m R LAKSHMAN REVANTH
-				</h1>
 
-				<p className="text-gray-600">
-					I&apos;m a app developer, backend developer & Trader
-				</p>
-				<div className="flex justify-center space-x-4 mt-8">
-					<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-						→ see my projects
-					</button>
-					<button className="border border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white font-bold py-2 px-4 rounded">
-						→ more about me
-					</button>
+			<div className="text-center space-y-4 h-screen flex flex-col justify-evenly items-center">
+				<CubeComponent />
+				<div className="portfolio-name">
+					<h1 className="text-4xl md:text-6xl font-bold">
+						HEY, I&apos;m R LAKSHMAN REVANTH
+					</h1>
+
+					<p className="text-gray-600">
+						I&apos;m a app developer, backend developer & Trader
+					</p>
+					<div className="flex justify-center space-x-4 mt-8">
+						<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+							→ see my projects
+						</button>
+						<button className="border border-gray-700 text-gray-700 hover:bg-gray-700 hover:text-white font-bold py-2 px-4 rounded">
+							→ more about me
+						</button>
+					</div>
 				</div>
 			</div>
 
@@ -309,6 +314,9 @@ export default function Home() {
 				</div>
 				<div className="skills-section-body"></div>
 			</div>
+			{/* <div className="road-card">
+				<div className="shadow">⚠ the End</div>
+			</div> */}
 
 			<Footer />
 		</main>
